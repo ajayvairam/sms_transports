@@ -1,105 +1,93 @@
-🚚 SMS Transports – Transportation Management System
+# 🚚 SMS Transports – Transportation Management System
 
 SMS Transports is a web-based transportation management system designed to streamline truck operations, trip tracking, and financial transparency between Admin, Owner, and Drivers.
 
-The system is built with a React frontend and Django backend, following a role-based access model with secure login and clear responsibility separation.
+The system uses a React frontend and a Django backend with role-based authentication and controlled access.
 
-✨ Key Features
-🔐 Role-Based Access
+---
 
+## ✨ Key Features
+
+### 🔐 Role-Based Access
 Admin
-
-Creates and manages Owners & Drivers
-
-Assigns trucks and transportation orders
-
-Uploads and manages documents (RC, insurance, pollution, axle details)
-
-Full control over system data
+- Creates and manages Owners and Drivers
+- Assigns trucks and transportation orders
+- Uploads and manages documents (RC, insurance, pollution, axle details)
+- Full system control
 
 Owner
-
-Read-only dashboard
-
-View trips, expenses, money flow, and uploaded bills
-
-Cannot modify data
+- Read-only dashboard
+- View trips, expenses, money flow, and uploaded bills
+- Cannot modify data
 
 Driver
+- Simple interface
+- View assigned money
+- Update trip expenses
+- Upload bills during trips
 
-Simple interface
+---
 
-View assigned money
+### 💰 Financial Transparency
+- Track money sent, spent, and remaining
+- Bills linked to trips
+- Chat-like transaction timeline
 
-Update trip expenses
+---
 
-Upload bills during trips
+## 🛠️ Tech Stack
 
-💰 Financial Transparency
-
-Track money sent, spent, and remaining
-
-Bill uploads linked to trips
-
-Chat-like transaction timeline for clarity
-
-🛠️ Tech Stack
 Frontend
-
-React.js
-
-JavaScript
-
-HTML, CSS
-
-Axios (API communication)
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Axios
 
 Backend
-
-Python
-
-Django
-
-Django REST Framework
-
-JWT Authentication
+- Python
+- Django
+- Django REST Framework
+- JWT Authentication
 
 Database
+- SQLite (Development)
+- MySQL (Production-ready)
 
-SQLite (Development)
+---
 
-MySQL (Production-ready)
+## 📁 Project Structure
 
-📁 Project Structure
 sms_transports/
-├── backend/          # Django backend
-│   ├── manage.py
-│   ├── apps/
-│   └── media/
-├── frontend/         # React frontend
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── README.md
-├── .gitignore
-└── README.md
+- backend/
+  - manage.py
+  - apps/
+  - media/
+- frontend/
+  - src/
+  - public/
+  - package.json
+  - README.md
+- .gitignore
+- README.md
 
-🚀 Getting Started
-1️⃣ Clone the Repository
+---
+
+## 🚀 Getting Started
+
+Clone the repository
 git clone https://github.com/ajayvairam/sms_transports.git
 cd sms_transports
 
-2️⃣ Frontend Setup
+Frontend setup
 cd frontend
 npm install
 npm start
 
-
-Frontend will run on:
-
+Frontend runs at
 http://localhost:3000
 
-3️⃣ Backend Setup
+Backend setup
 cd backend
 python -m venv venv
 venv\Scripts\activate
@@ -107,41 +95,37 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 
-
-Backend will run on:
-
+Backend runs at
 http://localhost:8000
 
-🔒 Authentication
+---
 
-No public signup
+## 🔒 Authentication
+- No public signup
+- Admin assigns login credentials
+- Role-based access control
 
-Admin assigns ID & Password for Owners and Drivers
+---
 
-Secure role-based login
+## 📌 Future Enhancements
+- Live GPS tracking
+- Driver attendance system
+- Invoice generation
+- Notifications and alerts
+- Mobile app support
 
-📌 Future Enhancements
+---
 
-Live GPS tracking
+## 👨‍💻 Author
 
-Driver attendance system
+Ajay Vairam  
+Madurai, Tamil Nadu  
+B.Tech – Computer Science & Engineering  
 
-Automated invoice generation
+GitHub: https://github.com/ajayvairam  
+LinkedIn: https://linkedin.com/in/ajayvairamt  
 
-Notification & alerts
+---
 
-Mobile app version
-
-👨‍💻 Author
-
-Ajay Vairam
-📍 Madurai, Tamil Nadu
-🎓 B.Tech – Computer Science & Engineering
-🔗 GitHub: https://github.com/ajayvairam
-
-🔗 LinkedIn: https://linkedin.com/in/ajayvairamt
-
-⭐ Support
-
-If you find this project useful, please ⭐ star the repository.
-It helps a lot!
+## ⭐ Support
+If you like this project, give it a star on GitHub.
