@@ -1,0 +1,25 @@
+# Virtual environments (CRITICAL)
+venv/
+env/
+ENV/
+backend/venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+
+# Django
+staticfiles/
+media/
+
+# Environment variables
+.env
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
